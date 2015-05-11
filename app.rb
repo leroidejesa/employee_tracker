@@ -37,3 +37,7 @@ get('/project_manager') do
   @projects = Project.all()
   erb(:project_manager)
 end
+
+get('/projects/new') do
+  erb(:project_form)
+end
