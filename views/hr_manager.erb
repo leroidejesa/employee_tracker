@@ -1,0 +1,8 @@
+<h2>Company Divisions:</h2>
+
+<% @divisions.each() do |division| %>
+  <ul>
+    <li><a href="/divisions/<%= division.id() %>"><%= division.name() %></a></li>
+  </ul>
+
+  <a href="/">HOME</a>
